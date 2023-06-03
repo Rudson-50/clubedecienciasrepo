@@ -1,0 +1,59 @@
+
+header {
+  background-color: #000000;
+}
+
+
+
+/* main */
+.main {
+  background: url("../img/robotica/robotica-background.png") no-repeat 0 0;
+  background-size: cover;
+}
+.main img {
+  min-width: 100%;
+  transform: translate(-30%, 5%);
+}
+.main-title {
+  margin: 200px 0 50px 0;
+}
+/* course */
+.course {
+  background-color: #0b0029;
+}
+/* area */
+.area {
+
+  background-color: #101652;
+}
+
+.area-title {
+  color: #000000;
+}
+.area p {
+  color: #000000;
+}
+/* card */
+.card-area {
+  background-color: #d7cbcf;
+}
+
+.cards {
+  background-color: #d7cbcf;
+}
+/* teacher */
+.teacher {
+  background-color: #0b0029;
+}
+
+.teacher p,
+h3 {
+  color: #ffffff;
+}
+@media only screen and (max-width: 600px) {
+  /* main */
+  .main img {
+      max-width: 100%;
+      transform: translate(-5%, 7%);
+    }
+}

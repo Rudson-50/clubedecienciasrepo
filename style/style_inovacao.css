@@ -1,0 +1,63 @@
+header {
+  background-color: #9D513D;
+}
+
+
+/* main */
+.main {
+    background-color: #9D513D;
+    background-size: cover;
+    
+  }
+
+  .main img {
+    min-width: 100%;
+    transform: translate(-13%, 7%);
+  }
+  .main-title {
+    margin: 150px 0 50px 0;
+  }
+  /* course */
+  .course {
+    background-color: #D0A94C;
+    background-size: cover;
+  
+  }
+
+  .area {
+    background-color: #9D513D;
+  }
+  .card-area {
+    background-color: #D0A94C;
+  }
+  .area-title {
+    color: #000000;
+  }
+  .area p {
+    color: #000000;
+  }
+  .card {
+    background-color: #D0A94C;
+  }
+  
+/* teacher */
+  .teacher {
+    background: url("../img/inovacao/inovacao-background.png");
+    
+  }
+
+  .teacher p,
+  h3 {
+    color: #000000;
+  }
+
+  @media only screen and (max-width: 992px) {
+    /* main */
+    .main img {
+        max-width: 100%;
+        transform: translate(-5%, 7%);
+      }
+  }
+
+  
+  

@@ -1,0 +1,275 @@
+/* All */
+h1,
+h2,
+h3,
+p,
+a {
+  font-family: "Exo 2", sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+h2 {
+  color: #000000;
+}
+/*Header */
+
+
+
+.button {
+  color: #ffffff;
+}
+.navbar img {
+  max-width: 150px;
+}
+
+.nav-item a {
+  color: #ffffff;
+}
+
+.nav-item a:hover {
+  color: #e29013;
+}
+
+/* Main */
+
+.main h1,
+p {
+  color: #ffffff;
+}
+.main h1 {
+  font-size: 3.5rem;
+}
+
+/* course */
+.parallax {
+  background-image: url("../img/cat-gbb831336d_640.jpg");
+  min-height: 450px;
+  background-attachment: fixed;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 750px;
+}
+
+.course-title {
+  color: #ffffff;
+}
+
+.about p {
+  color: #ffffff;
+  padding-bottom: 30px;
+}
+
+/* area */
+
+.area {
+  background-color: #101652;
+  min-height: 800px;
+  padding-top: 70px;
+}
+.area-title {
+  color: #000000;
+}
+.area p {
+  color: #000000;
+}
+.area-img {
+  max-width: 100px;
+}
+
+/* events */
+
+.events-title {
+  color: #ffffff;
+}
+
+/* card */
+.card-area {
+  border-radius: 30px;
+}
+
+.card {
+  transition: transform 1s;
+}
+
+.card:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+  z-index: 4;
+}
+.cards {
+  border-radius: 30px;
+  max-width: 400px;
+}
+
+.carousel {
+  min-height: 500px;
+}
+.carousel-inner {
+  overflow: visible;
+}
+
+.carousel-control-prev {
+  left: -10%;
+  top: -25%;
+}
+.carousel-control-next {
+  right: -10%;
+  top: -25%;
+}
+
+/* teacher */
+
+.teacher {
+  min-height: 450px;
+  padding-top: 70px;
+}
+
+.teacher-img {
+  width: 450px;
+}
+
+/* media query */
+
+@media only screen and (max-width: 992px) {
+  /* main */
+  .main-title {
+    margin: 20px 0 20px 0;
+    text-align: center;
+  }
+  /* about */
+  .parallax {
+    margin-bottom: 30px;
+    background-size: 100%;
+    background-attachment: local;
+  }
+  /* card */
+  .card {
+    background-color: #d7cbcf;
+    max-width: 100%;
+  }
+
+  .card-img-top {
+    max-width: 100%;
+  }
+  .carousel {
+    min-height: 1700px;
+  }
+  .card:hover {
+    transform: scale(1);
+    -webkit-transform: scale(1); /* Safari 3-8 */
+    transform: scale(1);
+  }
+  /* teacher */
+  .teacher {
+    text-align: center;
+    align-items: center;
+  }
+  .teacher-img {
+    max-width: 400px;
+  }
+
+  .teacher-text h3 {
+    margin-top: 30px;
+  }
+
+  .teacher-text p {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* about */
+  .carousel {
+    min-height: 1200px;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    display: none;
+  }
+}
+
+/* Forms */
+.forms .title{
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+.forms label {
+  color: #ffffff
+  ;
+}
+
+
+
+.forms input:focus, textarea:focus {
+  background: #ffffff;
+}
+
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+
+input[type="submit"] {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  min-width: 100px;
+  min-height: 40px;
+  font-weight: 700;
+}
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+/* FAQ */
+.faq {
+  padding-top: 100px;
+}
+
+.faq h2, h1 {
+  font-size: 3.5rem;
+  color: #ffffff;
+}
+.faq h3 {
+  border-bottom: #ffffff 3px solid;
+  color: #ffffff;
+}
+
+.faq p {
+  color: #ffffff;
+}
+
+.navbar-toggler {
+  border: 1px #ffffff solid;
+}
+
+footer {
+  background-color: #000000;
+
+
+}
+
+footer img {
+  height: 37px;
+  width: 39px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}

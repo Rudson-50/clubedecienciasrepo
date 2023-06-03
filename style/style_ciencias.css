@@ -1,0 +1,57 @@
+
+header {
+  background-color: #000000;
+}
+
+/* main */
+.main {
+    background: url("../img/ciencias/ciencias-background.png") no-repeat 0 0;
+    background-size: cover;
+  }
+
+  .main img {
+    min-width: 100%;
+    transform: translate(-40%, 7%);
+  }
+  .main-title {
+    margin: 150px 0 50px 0;
+  }
+  /* course */
+  .course {
+    background-color: #0A4B20;
+  }
+
+  .area {
+    background-color: #033012;
+  }
+
+  .area-title {
+    color: #000000;
+  }
+  .area p {
+    color: #000000;
+  }
+  /* card */
+  .card-area {
+    background-color: #d7cbcf;
+  }
+  .cards {
+    background-color: #d7cbcf;
+  }
+  /* teacher */
+  .teacher {
+    background: url("../img/ciencias/ciencias-background-2.png");
+  }
+
+  .teacher p,
+  h3 {
+    color: #ffffff;
+  }
+
+  @media only screen and (max-width: 992px) {
+    /* main */
+    .main img {
+        max-width: 100%;
+        transform: translate(-5%, 7%);
+      }
+  }
