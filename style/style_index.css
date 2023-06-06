@@ -9,15 +9,36 @@ header {
 
 .main {
     background: url("../img/index/index-background.png") no-repeat 0 0;
- 
     background-size: cover;
-    min-height: 768px;
-    width: 100%;
+    max-height: 768px;
+
   }
 
-  .main img {
+  .main-logo img {
     min-width: 100%;
     transform: translate(-13%, -3%);
+  }
+
+   .main-foguete img {
+    max-width: 100%;
+    transform: translate(50%, -115%);
+    animation: UpDown 3s linear infinite;
+    font-size: 4em;
+      cursor: pointer;
+      color: #715c3f;
+  
+  }
+  
+  @keyframes UpDown {
+    0% {
+      transform: translate(50%, -115%);
+    }
+    50% {
+      transform: translate(50%, -110%);
+    }
+    100% {
+      transform: translate(50%, -115%);
+    }
   }
   .main-title {
     margin: 150px 0 50px 0;
@@ -130,6 +151,11 @@ header {
     background: url("../img/index/index-background-6.png") no-repeat 0 0;
     background-size: cover;
     min-height: 768px;
+  }
+
+  .city img {
+    height: 125px;
+    transform: translate(200%, 250%);
   }
 
   .night {
@@ -600,7 +626,28 @@ header {
 .owl-next img {
   display: none;
 }
+@media only screen and (min-width:1840px) {
+  .main, .events, .info, .depositions, .galery, .city  {
+   min-height: 1200px;
+  }
+ }
+
+@media only screen and (min-width:1367px) and (max-width:1839px) {
+ .main, .events, .info, .depositions, .galery, .city  {
+  min-height: 1000px;
+ }
+}
+
+@media only screen and (max-width:992px) {
+.main {
+  min-height: 768px;
+}
+}
 @media only screen and (max-width: 767px) {
+
+  .main-foguete img {
+    max-width: 250px;
+  }
   .main-reviewimage {
     height: 400px;
     width: 425px;

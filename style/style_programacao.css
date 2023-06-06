@@ -41,7 +41,7 @@ header {
   }
 /* teacher */
   .teacher {
-    background: url("../img/programacao/programacao-background-2.png");
+    background:  linear-gradient(180deg, #383A46 0%, #000000 50%, #000000 100%);
   }
 
   .teacher p,

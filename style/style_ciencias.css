@@ -40,7 +40,7 @@ header {
   }
   /* teacher */
   .teacher {
-    background: url("../img/ciencias/ciencias-background-2.png");
+    background:  linear-gradient(180deg, #0A4B20 0%,#000000 100%);
   }
 
   .teacher p,

@@ -1,11 +1,11 @@
 header {
-  background-color: #9D513D;
+  background-color: #A76F03;
 }
 
 
 /* main */
 .main {
-    background-color: #9D513D;
+    background-color: #A76F03;
     background-size: cover;
     
   }
@@ -19,16 +19,16 @@ header {
   }
   /* course */
   .course {
-    background-color: #D0A94C;
+    background-color: #9B2B0A;
     background-size: cover;
   
   }
 
   .area {
-    background-color: #9D513D;
+    background-color: #A76F03;
   }
   .card-area {
-    background-color: #D0A94C;
+    background-color: #FC744A;
   }
   .area-title {
     color: #000000;
