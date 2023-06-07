@@ -137,6 +137,23 @@ p {
   width: 450px;
 }
 
+.navbar-toggler {
+  border: 1px #ffffff solid;
+}
+
+footer {
+  background-color: #000000;
+
+
+}
+
+footer img {
+  height: 37px;
+  width: 39px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
 /* media query */
 
 @media only screen and (max-width: 992px) {
@@ -197,82 +214,5 @@ p {
   }
 }
 
-/* Forms */
-.forms .title{
-  font-size: 3.5rem;
-  color: #fff;
-}
-
-.forms label {
-  color: #ffffff
-  ;
-}
-
-
-
-.forms input:focus, textarea:focus {
-  background: #ffffff;
-}
-
-
-input[type="text"],
-select,
-textarea {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 2px solid #000000;
-  border-radius: 20px;
-  box-sizing: border-box;
-}
-
-
-input[type="submit"] {
-  background-color: #000000;
-  color: #ffffff;
-  border: none;
-  border-radius: 15px;
-  min-width: 100px;
-  min-height: 40px;
-  font-weight: 700;
-}
-input[type="submit"]:hover {
-  cursor: pointer;
-}
-/* FAQ */
-.faq {
-  padding-top: 100px;
-}
-
-.faq h2, h1 {
-  font-size: 3.5rem;
-  color: #ffffff;
-}
-.faq h3 {
-  border-bottom: #ffffff 3px solid;
-  color: #ffffff;
-}
-
-.faq p {
-  color: #ffffff;
-}
-
-.navbar-toggler {
-  border: 1px #ffffff solid;
-}
-
-footer {
-  background-color: #000000;
-
-
-}
-
-footer img {
-  height: 37px;
-  width: 39px;
-  margin-left: 10px;
-  margin-bottom: 20px;
-}
 
     

@@ -1,11 +1,12 @@
 
 header {
-  background-color: #000000;
+  background-color: #041e0c;
+
 }
 
 /* main */
 .main {
-    background: url("../img/ciencias/ciencias-background.png") no-repeat 0 0;
+  background:  linear-gradient(180deg, #041e0c 0%, #041e0c 50%, #0a4b20 100%);
     background-size: cover;
   }
 

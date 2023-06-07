@@ -469,20 +469,12 @@ header {
               transform: rotate(45deg);
     }
     100% {
-      -webkit-transform: rotate(405deg);
-              transform: rotate(405deg);
-    }
-  }
-  @keyframes sky {
-    0% {
       -webkit-transform: rotate(45deg);
               transform: rotate(45deg);
     }
-    100% {
-      -webkit-transform: rotate(405deg);
-              transform: rotate(405deg);
-    }
   }
+ 
+
   
 
   @media only screen and (max-width: 992px) {
@@ -661,5 +653,8 @@ header {
   .testimonial_detail {
     left: inherit;
     width: 100%;
+  }
+  .night {
+    display: none;
   }
 }

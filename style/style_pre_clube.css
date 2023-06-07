@@ -1,15 +1,11 @@
 
-header {
+.teste-background {
 
-background-color: #12315e;
+  background: url("../img/pre-clube/pre-clube-background.png") no-repeat 0 0;
+  background-size: cover;
 }
 
 /* main */
-.main {
-    background: url("../img/pre-clube/pre-clube-background.png") no-repeat 0 0;
-    background-size: cover;
-  }
-
   .main img {
     min-width: 100%;
     transform: translate(-22%, 7%);

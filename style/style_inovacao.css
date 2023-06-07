@@ -1,49 +1,56 @@
 header {
-  background-color: #A76F03;
+  background-color: #E87E34;
 }
 
 
 /* main */
 .main {
-    background-color: #A76F03;
+
+  background:  linear-gradient(180deg, #E87E34 0%, #E87E34 50%, #FF914D 100%);
     background-size: cover;
     
   }
 
   .main img {
     min-width: 100%;
-    transform: translate(-13%, 7%);
+    transform: translate(-17%, 0%);
   }
   .main-title {
     margin: 150px 0 50px 0;
   }
   /* course */
   .course {
-    background-color: #9B2B0A;
+    background-color: #FFDE59;
     background-size: cover;
   
   }
+  .course p, .course-title {
+    color: #000000;
+  }
 
+  .events-title {
+    color: #000000;
+  }
   .area {
-    background-color: #A76F03;
+    background:   radial-gradient(  #FFDE59, #E87E34);
   }
   .card-area {
-    background-color: #FC744A;
+    background-color: #EA7E16;
   }
   .area-title {
-    color: #000000;
+    color: #ffffff;
   }
   .area p {
-    color: #000000;
+    color: #ffffff;
   }
   .card {
-    background-color: #D0A94C;
+    background-color: #EA7E16;
   }
   
 /* teacher */
   .teacher {
-    background: url("../img/inovacao/inovacao-background.png");
-    
+    background-color: #E87E34;
+    background:   linear-gradient(180deg,  #FFDE59 0%, #E87E34 100%);
   }
 
   .teacher p,
