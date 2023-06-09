@@ -24,7 +24,6 @@ header {
     transform: translate(50%, -115%);
     animation: UpDown 3s linear infinite;
     font-size: 4em;
-      cursor: pointer;
       color: #715c3f;
   
   }
@@ -67,6 +66,9 @@ header {
     display: block;
     opacity: 1;
   }
+
+  
+
   .carousel{
     padding-top: 75px;
   }
@@ -473,8 +475,16 @@ header {
               transform: rotate(45deg);
     }
   }
- 
-
+  @keyframes sky {
+    0% {
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+    }
+    100% {
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+    }
+  }
   
 
   @media only screen and (max-width: 992px) {

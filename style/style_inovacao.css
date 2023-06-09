@@ -24,6 +24,7 @@ header {
     background-size: cover;
   
   }
+
   .course p, .course-title {
     color: #000000;
   }
@@ -32,7 +33,8 @@ header {
     color: #000000;
   }
   .area {
-    background:   radial-gradient(  #FFDE59, #E87E34);
+    background: url('../img/inovacao/inovacao-background.png') no-repeat 0 0;
+    background-size: cover;
   }
   .card-area {
     background-color: #EA7E16;

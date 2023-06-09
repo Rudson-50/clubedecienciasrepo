@@ -231,6 +231,8 @@
           </div>
         </div>
       </div>
+     <img  id="arrow" src="img/arrow.png" alt="Seta clique aqui e volte para cima">
+
     </section>
     <section class="info">
       <div class="night">
@@ -360,7 +362,7 @@
                 <div class="test_img">
                   <div class="main-reviewimage">
                     <img
-                      src="img/speckled-rattlesnake-653642_1280.jpg"
+                      src="img/pato.jpg"
                       alt=""
                     />
                   </div>
@@ -379,7 +381,7 @@
                 <div class="test_img">
                   <div class="main-reviewimage">
                     <img
-                      src="img/artificial-intelligence-g576db5173_1280.jpg"
+                      src="img/animal.jpg"
                       alt=""
                     />
                   </div>
@@ -394,7 +396,7 @@
                 </div>
                 <div class="test_img">
                   <div class="main-reviewimage">
-                    <img src="img/cat-gbb831336d_640.jpg" alt="" />
+                    <img src="img/preguica.jpg" alt="" />
                   </div>
                 </div>
               </div>
@@ -410,7 +412,7 @@
     </section>
     <footer class="pt-3">
       <div class="container-fluid">
-        <div class="row d-flex justify-content-around align-items-lg-end">
+        <div class="footer row d-flex justify-content-around align-items-lg-end ">
           <div class="footer-icons col-lg-3 col-12">
             <a href=""
               ><img src="img/footer/whatsapp.png" alt="link whasapp"
@@ -436,10 +438,10 @@
       </div>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    
   </body>
 </html>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script
   src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
   integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -453,3 +455,74 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js" integrity="sha512-lo4YgiwkxsVIJ5mex2b+VHUKlInSK2pFtkGFRzHsAL64/ZO5vaiCPmdGP3qZq1h9MzZzghrpDP336ScWugUMTg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="index.js"></script>
 
+<script>
+
+  
+  $("#slide-testimonal").owlCarousel({
+    margin: 0,
+    center: true,
+    loop: true,
+    nav: true,
+    navClass: [ 'owl-prev-custom', 'owl-next' ],
+    navText: [
+      "<img src='img/index/arrow-prev.png'>",
+      "<img src='img/index/arrow-next.png'>",
+    ],
+    autoplay: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      768: {
+        items: 2,
+        margin: 15,
+      },
+      1000: {
+        items: 1,
+      },
+    },
+  });
+  $("#testimonal").owlCarousel({
+    margin: 0,
+    center: true,
+    loop: true,
+    nav: true,
+    navClass: [ 'owl-prev', 'owl-next-custom' ],
+    navText: [
+      "<img src='img/index/arrow-prev.png'>",
+      "<img src='img/index/arrow-next.png'>",
+    ],
+    autoplay: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      768: {
+        items: 2,
+        margin: 15,
+      },
+      1000: {
+        items: 1,
+      },
+    },
+  });
+  
+  $(document).ready(function () {
+    var o1 = $("#slide-testimonal"),
+      o2 = $("#testimonal");
+  
+    //Sync o2 by o1
+    o1.on("click", ".owl-next-custom", function () {
+      o2.trigger("next.owl.carousel");
+    });
+    o1.on("click", ".owl-prev-custom", function () {
+      o2.trigger("prev.owl.carousel");
+    });
+    //Sync o1 by o2
+    o2.on("click", ".owl-next-custom", function () {
+      o1.trigger("next.owl.carousel");
+    });
+    o2.on("click", ".owl-prev-custom", function () {
+      o1.trigger("prev.owl.carousel");
+    });
+  });</script>

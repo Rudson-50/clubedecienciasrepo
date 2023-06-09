@@ -14,7 +14,6 @@ $(".carousel").on("touchstart", function (event) {
     $(this).off("touchmove");
   });
 });
-
 $("#recipeCarousel").on("slide.bs.carousel", function () {
   $("#carousel-inner").css("overflow", "hidden");
 });
@@ -23,71 +22,40 @@ $("#recipeCarousel").on("slid.bs.carousel", function () {
   $("#carousel-inner").css("overflow", "visible");
 });
 
-$("#slide-testimonal").owlCarousel({
-  margin: 0,
-  center: true,
-  loop: true,
-  nav: true,
-  navClass: [ 'owl-prev-custom', 'owl-next' ],
-  navText: [
-    "<img src='img/index/arrow-prev.png'>",
-    "<img src='img/index/arrow-next.png'>",
-  ],
-  autoplay: true,
-  responsive: {
-    0: {
-      items: 1,
-    },
-    768: {
-      items: 2,
-      margin: 15,
-    },
-    1000: {
-      items: 1,
-    },
-  },
-});
-$("#testimonal").owlCarousel({
-  margin: 0,
-  center: true,
-  loop: true,
-  nav: true,
-  navClass: [ 'owl-prev', 'owl-next-custom' ],
-  navText: [
-    "<img src='img/index/arrow-prev.png'>",
-    "<img src='img/index/arrow-next.png'>",
-  ],
-  autoplay: true,
-  responsive: {
-    0: {
-      items: 1,
-    },
-    768: {
-      items: 2,
-      margin: 15,
-    },
-    1000: {
-      items: 1,
-    },
-  },
-});
+var arrow = $('#arrow');
+var temporizador;
+var posicaoAnterior = $(window).scrollTop();
+var alturaLimite = 900; // Altura em pixels
 
-$(document).ready(function () {
-  var o1 = $("#slide-testimonal"),
-    o2 = $("#testimonal");
 
-  //Sync o2 by o1
-  o1.on("click", ".owl-next-custom", function () {
-    o2.trigger("next.owl.carousel");
-  });
-  o1.on("click", ".owl-prev-custom", function () {
-    o2.trigger("prev.owl.carousel");
-  });
-  //Sync o1 by o2
-  o2.on("click", ".owl-next-custom", function () {
-    o1.trigger("next.owl.carousel");
-  });
-  o2.on("click", ".owl-prev-custom", function () {
-    o1.trigger("prev.owl.carousel");
-  });
+$(window).scroll(function() {
+  var posicaoAtual = $(window).scrollTop();
+
+  if (posicaoAtual < posicaoAnterior && posicaoAtual > alturaLimite) {
+   arrow.fadeIn();
+ 
+  } else {
+   arrow.fadeOut();
+
+  }
+  posicaoAnterior = posicaoAtual; // Atualizar a posição anterior de rolagem
+});
+function ocultarObjeto() {
+  arrow.fadeOut();
+
+}
+function reiniciarTemporizador() {
+  clearTimeout(temporizador);
+  temporizador = setTimeout(ocultarObjeto, 2000); // Tempo em milissegundos antes de ocultar o objeto (3 segundos neste exemplo)
+}
+document.addEventListener("DOMContentLoaded", function() {
+  arrow.hide();
+
+});
+window.addEventListener("scroll", function() {
+  reiniciarTemporizador();
+});
+arrow.on('click', function(e) {
+
+  $("html, body").animate({scrollTop: 0}, 500);
 });
