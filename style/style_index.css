@@ -648,6 +648,9 @@ header {
   height: 125px;
   transform: translate(50%, 250%);
 }
+.night {
+  display: none;
+}
 
 }
 @media only screen and (max-width: 767px) {
