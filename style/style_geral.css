@@ -124,10 +124,12 @@ p {
 .carousel-control-prev {
   left: -10%;
   top: -25%;
+  width: 10%;
 }
 .carousel-control-next {
   right: -10%;
   top: -25%;
+  width: 10%;
 }
 
 /* teacher */
@@ -229,5 +231,14 @@ footer img {
   }
 }
 
+@media (max-width: 440px) {
+ 
+  .parallax {
+    background-position: top;
+  }
+  .carousel {
+    min-height: 1000px;
+  }
+}
 
     

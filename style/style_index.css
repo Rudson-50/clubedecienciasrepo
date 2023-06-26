@@ -68,7 +68,7 @@ header {
 }
 
 .carousel {
-  padding-top: 75px;
+ margin-top: 75px;
   min-height: 500px;
 }
 
@@ -708,6 +708,9 @@ header {
   .night {
     display: none;
   }
+  .carousel {
+    min-height: 1700px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .main-foguete img {
@@ -725,5 +728,9 @@ header {
   }
   .night {
     display: none;
+  }
+  .carousel {
+    max-height: 1400px;
+    min-height: 1400px;
   }
 }
