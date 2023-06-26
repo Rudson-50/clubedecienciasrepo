@@ -12,7 +12,7 @@ header {
 
   .main img {
     min-width: 100%;
-    transform: translate(-40%, 7%);
+    transform: translate(-45%, 7%);
   }
   .main-title {
     margin: 150px 0 50px 0;
@@ -20,6 +20,9 @@ header {
   /* course */
   .course {
     background-color: #0A4B20;
+  }
+  .parallax {
+    background-image: url("../img/ciencias/parallax.jpg");
   }
 
   .area {
@@ -43,11 +46,14 @@ header {
   .teacher {
     background:  linear-gradient(180deg, #0A4B20 0%,#000000 100%);
   }
+  
 
   .teacher p,
   h3 {
     color: #ffffff;
   }
+
+
 
   @media only screen and (max-width: 992px) {
     /* main */

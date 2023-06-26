@@ -1,7 +1,9 @@
 header {
   background-color: #000000;
 }
-
+.nav-item a:hover {
+  color: #e29013;
+}
 
 /* main */
 .main {
@@ -21,6 +23,9 @@ header {
   /* course */
   .course {
     background-color: #242124;
+  }
+  .parallax {
+    background-image: url("../img/programacao/parallax.jpg");
   }
 /* area */
   .area {

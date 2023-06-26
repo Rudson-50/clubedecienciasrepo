@@ -14,6 +14,9 @@ body {
   overflow-x: hidden;
   
 }
+p {
+  font-size: 1rem;
+}
 
 h2 {
   color: #000000;
@@ -31,10 +34,11 @@ h2 {
 
 .nav-item a {
   color: #ffffff;
+  line-height: 20px;
 }
 
 .nav-item a:hover {
-  color: #e29013;
+  color: #000000;
 }
 
 /* Main */
@@ -49,7 +53,6 @@ p {
 
 /* course */
 .parallax {
-  background-image: url("../img/cat-gbb831336d_640.jpg");
   min-height: 450px;
   background-attachment: fixed;
   background-position: left;
@@ -108,10 +111,12 @@ p {
   border-radius: 30px;
   max-width: 400px;
 }
-
 .carousel {
-  min-height: 500px;
+  min-height: 375px;
 }
+
+
+
 .carousel-inner {
   overflow: visible;
 }
@@ -128,12 +133,12 @@ p {
 /* teacher */
 
 .teacher {
-  min-height: 450px;
-  padding-top: 70px;
+
+  padding: 10px;
 }
 
 .teacher-img {
-  width: 450px;
+  max-width: 150px;
 }
 
 .navbar-toggler {

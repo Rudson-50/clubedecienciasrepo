@@ -18,7 +18,9 @@
   background-color: #397DC9;
   background-size: cover;
 }
-
+.parallax {
+  background-image: url("../img/pre-clube/parallax.jpg");
+}
 .area {
   background-color: #1A4789;
 }

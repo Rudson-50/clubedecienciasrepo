@@ -48,6 +48,9 @@ header {
   .card {
     background-color: #EA7E16;
   }
+  .parallax {
+    background-image: url("../img/inovacao/parallax.jpg");
+  }
   
 /* teacher */
   .teacher {
