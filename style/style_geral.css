@@ -223,7 +223,7 @@ footer img {
 @media (max-width: 768px) {
   /* about */
   .carousel {
-    min-height: 1200px;
+    min-height: 1300px;
   }
   .carousel-control-next,
   .carousel-control-prev {
