@@ -17,6 +17,9 @@ header {
   .main-title {
     margin: 150px 0 50px 0;
   }
+  .nav-item a:hover {
+    color: #e29013;
+  }
   /* course */
   .course {
     background-color: #0A4B20;
@@ -52,8 +55,6 @@ header {
   h3 {
     color: #ffffff;
   }
-
-
 
   @media only screen and (max-width: 992px) {
     /* main */
